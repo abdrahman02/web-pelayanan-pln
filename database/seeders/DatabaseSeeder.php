@@ -41,7 +41,7 @@ class DatabaseSeeder extends Seeder
             'password' => bcrypt('smanda009')
         ]);
         // User::factory(30)->create();
-        // Berita::factory(250)->create();
+        Berita::factory(6)->create();
         // Keluhan::factory(30)->create();
         // Pasbar::factory(50)->create();
         // Udl::factory(30)->create();

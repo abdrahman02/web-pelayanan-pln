@@ -17,7 +17,7 @@ class BeritaFactory extends Factory
     public function definition()
     {
         return [
-            'user_id' => fake()->randomDigitNotNull(),
+            'user_id' => 2,
             'judul_berita' => fake()->words(3, true),
             'body' => fake()->paragraphs(5, true)
         ];

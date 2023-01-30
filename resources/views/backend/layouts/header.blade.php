@@ -261,18 +261,20 @@
                             <div class="dropdown d-md-flex profile-1">
                                 <a href="#" data-bs-toggle="dropdown" class="nav-link pe-2 leading-none d-flex animate">
                                     @php
-                                        $image = auth()->user()->image
+                                    $image = auth()->user()->image
                                     @endphp
                                     <span>
                                         @if (!empty($image))
                                         <img src="{{ asset('storage/user/'.$image) }}" alt="profile-user"
-                                        class="avatar  profile-user brround cover-image">
+                                            class="avatar profile-user brround cover-image"
+                                            style="border: 2px solid #000">
                                         @else
                                         <img src="{{ asset('img/6.jpg') }}" alt="profile-user"
-                                        class="avatar  profile-user brround cover-image">
+                                            class="avatar profile-user brround cover-image"
+                                            style="border: 2px solid #000">
                                         @endif
                                     </span>
-                                    
+
                                     <div class="text-center p-1 d-flex d-lg-none-max">
                                         <h6 class="mb-0" id="profile-heading">{{ auth()->user()->name }}<i
                                                 class="user-angle ms-1 fa fa-angle-down "></i></h6>

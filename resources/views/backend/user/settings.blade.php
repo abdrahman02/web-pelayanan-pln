@@ -7,9 +7,11 @@
                 <div class="d-flex flex-wrap align-items-center">
                     <div class="profile-img-main rounded">
                         @if (!empty($user->image))
-                        <img src="{{ asset('storage/user/'.$user->image) }}" alt="img" class="m-0 p-1 rounded hrem-6">
+                        <img src="{{ asset('storage/user/'.$user->image) }}" alt="img" class="m-0 p-1"
+                            style="height: 200px; width: 200px; border-radius: 50%; border: 2px solid #000">
                         @else
-                        <img src="{{ asset('img/6.jpg') }}" alt="img" class="m-0 p-1 rounded hrem-6">
+                        <img src="{{ asset('img/6.jpg') }}" alt="img" class="m-0 p-1"
+                            style="height: 200px; width: 200px; border-radius: 50%; border: 2px solid #000">
                         @endif
                     </div>
                     <div class="ms-4">
@@ -83,9 +85,9 @@
                         </div>
                         @if ($user->image)
                         <img src="{{ asset('storage/user/'.$user->image) }}" class="img-preview img-fluid mb-3"
-                             style="max-width: 300px;">
+                            style="max-width: 300px;">
                         @else
-                        <img class="img-preview img-fluid mb-3"  style="max-width: 300px;">
+                        <img class="img-preview img-fluid mb-3" style="max-width: 300px;">
                         @endif
                     </div>
 
